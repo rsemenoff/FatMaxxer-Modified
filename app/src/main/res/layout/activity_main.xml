@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="online.fatmaxxer.publicRelease1.MainActivity"
+    android:id="@+id/application_container"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:id="@+id/modeView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="-10dp"
+                android:text="@string/Light"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorText"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:id="@+id/timeView"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:text="@string/undefinedTimeString"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="32sp" />
+
+            <TextView
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginLeft="-10dp"
+                android:id="@+id/battView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="----"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorText"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/hrLabel"
+                android:layout_marginBottom="-4dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif"
+                android:text="@string/HeartRateAbbrev"
+                android:textColor="@color/colorRed"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/a1Label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:text="⍺1"
+                android:textColor="@color/colorA1V2"
+                android:textColorHighlight="@color/colorA1V2"
+                android:layout_weight="1"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/hrvLabel"
+                android:layout_marginBottom="-4dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:textColor="@color/colorText"
+                android:text="@string/RootMeanSquareSuccessiveDifferencesAbbrev"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/hrTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="---"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="48sp" />
+
+            <TextView
+                android:id="@+id/a1TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:text="---"
+                android:textColor="@color/colorText"
+                android:layout_weight="1"
+                android:textSize="56sp" />
+
+            <TextView
+                android:id="@+id/hrvTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="48sp"
+                android:textColor="@color/colorText"
+                android:text="---"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/artifactsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/ArtifactsSamplesThreshold_UI"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/artifactsView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="--/-- (--%)"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="32sp" />
+
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="360dip"
+            android:id="@+id/graph"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="TextView"
+            android:textColor="@color/colorText" />
+
+        <!-- res/layout/example_activity.xml -->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/settings_container"
+            android:layout_width="match_parent"
+            android:layout_height="955dp" />
+
+    </LinearLayout>
+</ScrollView>

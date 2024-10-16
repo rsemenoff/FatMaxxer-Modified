@@ -1,0 +1,63 @@
+<resources>
+
+    <!--- requires translation -->
+    <string-array name="notificationDetailEntries">
+        <item>Title with alpha1/drop% only</item>
+        <item>Title + HR in body</item>
+        <item>Title + full details in body</item>
+    </string-array>
+
+    <string-array name="notificationDetailValues">
+        <item>title</item>
+        <item>titleHR</item>
+        <item>full</item>
+    </string-array>
+
+    <string-array name="artifactThresholdEntries">
+        <item>0.05</item>
+        <item>0.25</item>
+        <item>Auto</item>
+    </string-array>
+
+    <string-array name="artifactThresholdEntryValues">
+        <item>0.05</item>
+        <item>0.25</item>
+        <item>Auto</item>
+    </string-array>
+
+    <!-- requires translation -->
+    <string-array name="graphFeaturesEntries">
+        <item>Heart Rate (BPM)</item>
+        <item>RR /5 (msec)</item>
+        <item>Alpha1 x100 (2 min)</item>
+        <item>RMSSD x2 (msec 2 min)</item>
+        <item>Heart Rate (BPM 2 min avg)</item>
+        <item>Artifacts (%, 2 min)</item>
+        <item>Peak ECG (uVolt, 2 sec)</item>
+    </string-array>
+
+    <string-array name="graphFeaturesValues">
+        <item>hr</item>
+        <item>rr</item>
+        <item>a1</item>
+        <item>rmssd</item>
+        <item>hrWin</item>
+        <item>artifacts</item>
+        <item>peakECG</item>
+    </string-array>
+
+    <string-array name="graphFeaturesDefaultValues">
+        <item>hr</item>
+        <item>rr</item>
+        <item>a1</item>
+        <item>artifacts</item>
+        <item>peakECG</item>
+    </string-array>
+
+    <string-array name="graphReplayFeaturesDefaultValues">
+        <item>hrWin</item>
+        <item>a1</item>
+        <item>artifacts</item>
+    </string-array>
+
+</resources>

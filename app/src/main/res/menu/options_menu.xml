@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/quitOption"
+        android:title="Quit" />
+<!--
+    <item android:id="@+id/soundEnableMenuOption"
+        android:title="Enable sound" />
+    <item android:id="@+id/soundDisableMenuOption"
+        android:title="Disable sound" />
+-->
+    <item android:id="@+id/connectOption"
+        android:title="Connect" />
+    <item android:id="@+id/searchForPolarDevices"
+        android:title="Search for devices" />
+<!--
+    <item android:id="@+id/settingsOption"
+        android:title="Settings" />
+-->
+</menu>
