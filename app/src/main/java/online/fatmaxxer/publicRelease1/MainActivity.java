@@ -1880,7 +1880,7 @@ public class MainActivity extends AppCompatActivity {
             public void onInit(int status) {
                 Log.d(TAG, "TextToSpeech status " + status);
                 if (status==TextToSpeech.SUCCESS) {
-                    ttobj.setLanguage(Locale.UK);
+                    ttobj.setLanguage(Locale.CANADA);//RWS 2024-10-19
                     nonScreenUpdate("Voice output ready");
                 } else {
                     Log.d(TAG, "TextToSpeech: unable to initialise");
