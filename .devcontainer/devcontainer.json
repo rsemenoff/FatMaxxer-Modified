@@ -1,0 +1,23 @@
+{
+  "name": "FatMaxxer Android",
+  "image": "mcr.microsoft.com/devcontainers/java:1-17-bookworm",
+  "remoteUser": "vscode",
+  "containerEnv": {
+    "ANDROID_SDK_ROOT": "/opt/android-sdk",
+    "ANDROID_HOME": "/opt/android-sdk"
+  },
+  "remoteEnv": {
+    "ANDROID_SDK_ROOT": "/opt/android-sdk",
+    "ANDROID_HOME": "/opt/android-sdk",
+    "PATH": "${containerEnv:PATH}:/opt/android-sdk/cmdline-tools/latest/bin:/opt/android-sdk/platform-tools"
+  },
+  "postCreateCommand": "bash -lc 'set -eux; mkdir -p /opt/android-sdk; if [ ! -x /opt/android-sdk/cmdline-tools/latest/bin/sdkmanager ]; then curl -fsSL https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip -o /tmp/cmdline-tools.zip; rm -rf /tmp/android-sdk; mkdir -p /tmp/android-sdk; unzip -q -o /tmp/cmdline-tools.zip -d /tmp/android-sdk; mkdir -p /opt/android-sdk/cmdline-tools; cp -r /tmp/android-sdk/cmdline-tools/* /opt/android-sdk/cmdline-tools/; fi; yes | /opt/android-sdk/cmdline-tools/latest/bin/sdkmanager --sdk_root=/opt/android-sdk \"platform-tools\" \"platforms;android-33\" \"build-tools;33.0.2\" \"extras;google;m2repository\"'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "ms-androidtools.android-dev-ext"
+      ]
+    }
+  }
+}
