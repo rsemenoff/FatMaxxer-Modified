@@ -1,0 +1,12 @@
+{
+  "name": "FatMaxxer Android",
+  "image": "mcr.microsoft.com/devcontainers/java:1-17-bookworm",
+  "features": {
+    "ghcr.io/gaurav-nelson/devcontainer-features/android-sdk:1": {
+      "platforms": "android-33",
+      "buildTools": "33.0.2",
+      "cmakeVersion": "3.22.1"
+    }
+  },
+  "postCreateCommand": "chmod +x ./gradlew && ./gradlew tasks"
+}
